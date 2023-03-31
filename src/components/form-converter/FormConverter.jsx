@@ -34,10 +34,6 @@ export default function FormConverter() {
         amountConvertFirstField
       );
 
-      if (!response.ok) {
-        throw new Error(response.status);
-      }
-
       setAmountConvertSecondField(response.result);
     } catch (error) {
       console.log(error);
